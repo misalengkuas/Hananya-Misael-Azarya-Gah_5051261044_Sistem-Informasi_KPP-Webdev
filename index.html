@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161d3a">
+  <title>SkyDrill | Simulator Latihan Terbang Drone</title>
+  <meta name="description" content="SkyDrill: simulator web untuk latihan terbang drone tanpa risiko, dengan misi khusus ala kompetisi, skor otomatis, dan track record latihan.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <a class="logo" href="#top">SkyDrill.</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka menu navigasi">
+    <label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+    <nav aria-label="Navigasi utama">
+      <a href="#fitur">Fitur</a>
+      <a href="#mockup">Tampilan</a>
+      <a href="#sponsor">Sponsor</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <a class="btn btn-small nav-cta" href="#mockup">Lihat Prototipe</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <p class="pill">SPECIAL MISSION !!</p>
+      <h1>SkyDrill.</h1>
+      <p class="lead">Simulator web untuk latihan terbang drone tanpa risiko. Anggota baru tim drone berlatih lewat browser dengan "SPECIAL MISSION" ala kompetisi, lengkap dengan skor yang tercatat.</p>
+      <div class="actions">
+        <a class="btn" href="#mockup">Lihat Tampilan</a>
+        <a class="btn btn-ghost" href="#sponsor">Jadi Sponsor</a>
+      </div>
+      <ul class="targets">
+        <li><strong>3+</strong> misi per pengguna</li>
+        <li><strong>±20</strong> anggota baru uji coba</li>
+        <li><strong>6 bln</strong> dari riset ke rilis awal</li>
+      </ul>
+      <p class="note">Angka di atas adalah target rencana fase prototipe.</p>
+    </section>
+
+    <!-- ===== FITUR ===== -->
+    <section id="fitur" class="section">
+      <h2>Fitur.</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Misi khusus</h3>
+          <p>Latihan meniru tugas kompetisi UAV: ikuti rute, lewati waypoint, lalu mendarat di titik yang ditentukan.</p>
+        </article>
+        <article class="card">
+          <h3>Skor otomatis</h3>
+          <p>Setiap sesi dinilai dari akurasi rute, waktu, dan jumlah kesalahan, langsung muncul setelah terbang.</p>
+        </article>
+        <article class="card">
+          <h3>Track record</h3>
+          <p>Riwayat latihan tiap anggota tersimpan, jadi pelatih bisa melihat kemajuan dan menyiapkan tim kompetisi.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== TAMPILAN / VISUAL ===== -->
+    <section id="mockup" class="section">
+      <h2>Mockup.</h2>
+      <p class="lead">Tiga layar utama SkyDrill. Data di bawah hanya contoh.</p>
+
+      <div class="screens">
+
+        <figure>
+          <div class="screen">
+            <div class="bar"><span></span><span></span><span></span></div>
+            <div class="body">
+              <p class="s-title">Pilih misi</p>
+              <div class="mission">
+                <div><b>Misi 1: Waypoint Dasar</b><small>Mudah · 4 waypoint</small></div>
+                <span class="tag">Skor 72</span>
+              </div>
+              <div class="mission">
+                <div><b>Misi 2: Pendaratan Presisi</b><small>Sedang · 1 titik mendarat</small></div>
+                <span class="tag">Skor 58</span>
+              </div>
+              <div class="mission locked">
+                <div><b>Misi 3: Rute Berliku</b><small>Sulit · 7 waypoint</small></div>
+                <span class="tag off">Terkunci</span>
+              </div>
+              <span class="mock-btn">Mulai misi</span>
+            </div>
+          </div>
+          <figcaption>1. Pilih misi</figcaption>
+        </figure>
+
+        <figure>
+          <div class="screen">
+            <div class="bar"><span></span><span></span><span></span></div>
+            <div class="body sim">
+              <div class="hud"><span>Waktu 00:42</span><span>Tinggi 18 m</span><span>Baterai 76%</span></div>
+              <svg viewBox="0 0 320 210" role="img" aria-label="Rute misi dengan empat waypoint dan titik pendaratan">
+                <path d="M30 175 L80 100 L160 140 L230 60 L285 120 L285 180" fill="none" stroke="#ffd91e" stroke-width="2.5" stroke-dasharray="6 5"/>
+                <g fill="#2342a0" stroke="#ffd91e" stroke-width="2">
+                  <circle cx="80" cy="100" r="10"/><circle cx="160" cy="140" r="10"/>
+                  <circle cx="230" cy="60" r="10"/><circle cx="285" cy="120" r="10"/>
+                </g>
+                <g fill="#f2f3fb" font-size="10" font-weight="700" text-anchor="middle">
+                  <text x="80" y="104">1</text><text x="160" y="144">2</text>
+                  <text x="230" y="64">3</text><text x="285" y="124">4</text>
+                </g>
+                <rect x="271" y="166" width="28" height="28" rx="6" fill="none" stroke="#f2f3fb" stroke-width="2"/>
+                <text x="285" y="185" fill="#f2f3fb" font-size="12" font-weight="700" text-anchor="middle">H</text>
+                <polygon points="30,163 40,185 20,185" fill="#f2f3fb"/>
+              </svg>
+            </div>
+          </div>
+          <figcaption>2. Simulasi dengan rute dan waypoint</figcaption>
+        </figure>
+
+        <figure>
+          <div class="screen">
+            <div class="bar"><span></span><span></span><span></span></div>
+            <div class="body">
+              <p class="s-title">Hasil sesi</p>
+              <div class="score"><span>86</span><small>dari 100</small></div>
+              <ul class="stats">
+                <li>Akurasi rute <b>91%</b></li>
+                <li>Waktu <b>01:12</b></li>
+                <li>Kesalahan <b>2</b></li>
+              </ul>
+              <p class="s-sub">Riwayat 5 percobaan terakhir</p>
+              <div class="chart" role="img" aria-label="Skor naik dari 52 ke 86">
+                <i style="height:40%"></i><i style="height:55%"></i><i style="height:62%"></i><i style="height:74%"></i><i style="height:86%"></i>
+              </div>
+            </div>
+          </div>
+          <figcaption>3. Skor dan riwayat latihan</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ===== SPONSOR ===== -->
+    <section id="sponsor" class="section">
+      <div class="cta">
+        <h2>Dukung SkyDrill.</h2>
+        <p>Sponsor mendapat tempat di website, halaman skor, dan laporan uji coba. Tersedia paket Bronze, Silver, Gold, dan dukungan berupa perangkat atau mentoring.</p>
+        <a class="btn" href="#kontak">Hubungi Kami</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="kontak" class="footer">
+    <p class="logo">SkyDrill.</p>
+    <p>Proyek inovasi untuk Open Recruitment Bayucaraka ITS 2026</p>
+    <address>
+      Kontak: <a href="mailto:5051261044@student.its.ac.id">5051261044@student.its.ac.id</a><br>
+      Bayucaraka ITS:
+      <a href="https://bayucaraka-its.com" target="_blank" rel="noopener">bayucaraka-its.com</a> ·
+      <a href="https://www.instagram.com/bayucaraka.its" target="_blank" rel="noopener">Instagram @bayucaraka.its</a>
+    </address>
+    <p class="copy">Dibuat oleh Hananya Misael Azarya Gah · Sistem Informasi ITS</p>
+  </footer>
+
+</body>
+</html>
