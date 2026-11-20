@@ -8,7 +8,7 @@ Landing page untuk **SkyDrill**, simulator web untuk latihan terbang drone tanpa
 - Departemen: Sistem Informasi
 
 ## Demo
-GitHub Pages: [ISI LINK JIKA SUDAH AKTIF]
+GitHub Pages: [https://github.com/misalengkuas/Hananya-Misael-Azarya-Gah_5051261044_Sistem-Informasi_KPP-Webdev]
 
 ## Isi Halaman
 Navbar, Hero, Fitur, Mockup (3 layar utama), ajakan sponsor, dan Footer.
